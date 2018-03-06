@@ -1,29 +1,11 @@
 language: python
-
-#which versions of html to test against
 python:
   - "2.7"
-
-# command to install dependencies
 install:
+  - pip install coverage  
   - pip install codecov
-  - pip install coverage
-#  - pip install ./lecture7/
-#  - pip install -r ./lecture7/requirements.txt
-
-script: 
-  - python -m unittest discover -v ./HelloPython/ # command to run unit test
-  - coverage run ./HelloPython/myPython.py # command to run code coverage
-
-#can do additional things, say send out reports, which we will discuss next time
+script:
+  - python goodbyeworld.py
+  - coverage run goodbyeworld.py
 after_success:
- - codecov --token=90da6395-a48c-4c10-a1d4-d4e7663d5935 # upload coverage report to codecov.io
-
-deploy:
-  provider: s3
-  access_key_id: AKIAI7RH7L3SO6BODMKQ
-  secret_access_key:
-    secure: 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
-  bucket: flyehye.com
-  local-dir: HelloWorld
-  
+  - codecov
