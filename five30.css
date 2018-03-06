@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Cookie|Courgette|Press+Start+2P|Inconsolata|Indie+Flower|Josefin+Sans|Nunito|Oxygen|PT+Sans+Narrow|Pacifico|Delius+Unicase|Gloria+Hallelujah|Titillium+Web');
+
+/*
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Chewy', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Press Start 2P', cursive;
+*/
+
+a:visited {
+    color: #32cd32;
+}
+
+.greybox:hover{
+  background-color: #1c2f2f;
+  box-shadow: 10px 10px #2c2c2c;
+}
+
+.faded {
+  /* Set opacity of the text to be 0.7 */
+  opacity: 0.7;
+}
+
+.hl {
+  font-family:  'Courgette', cursive;
+  color:red; 
+  font-size:75px;
+  padding-left: 50px;
+  padding-top: -10px;
+}
+
+.center {
+  text-align : center;
+  color : red;
+}
+
+.white {
+  color : #faebd7;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  /*background-color: red;*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: yellow;
+    background-color: #222222;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.dropdown-submenu {
+    position: relative;
+    color: white;
+    background-color: #111111;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+    color: white;
+            background-color: yellow;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    background-color: #111111;
+    color: white;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+            background-color: red;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+            background-color: green;
+}
+
+div {  
+      padding-top: 5px;  
+      padding-bottom: 5px;  
+      padding-right: 50px;  
+      padding-left: 50px;  
+      color: red;
+    } 
+
+
+body {
+  /* Set margin to 0 pixels on all sides */
+  margin: 0px;
+  color: red;
+  font-size: 15px;
+  /* Set line height to be 1.5 times larger than default */
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black ; 
+  /*background-image: url("./images/sunset.jpg") repeat-x repeat-y;*/
+  background-size: 100% 100%;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  /* Set max width to be 100% of the containing element */
+  max-width: 100%;
+  border-radius: 8px;
+  max-height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+main {
+  /* Set maximum width to be 800 pixels */
+  /*max-width: 90%;*/
+  max-width: 900px;
+  /* Set margin to be automatically calculated on all sides */
+  margin: auto;
+  /* Set padding to be 0 pixels top & bottom, and 20 pixels left & right */
+  padding: 0px 10px;
+}
+
+h1.greyline {
+  /* Set border along bottom to be a black solid line 5 pixels thick */
+  text-align: center;
+  line-height: 150%;
+  font-size: 40px;
+  border-bottom: 5px solid grey;
+}
+
+h1, h2 , h3, h4, h5, h6{
+  color: #f5f5f5;
+  font-family: 'Delius Unicase', cursive;
+}
+
+p {
+  color: #aaaaaa;
+  /*background: rgba(255,255,155,0.2); color: red;*/
+}
+footer {
+  color: red;
+  background-color: #111111;
+  /* Set padding on all sides to be 20 pixels */
+  padding: 10px;
+  text-align: center;
+  /* Set margin on top to be 60 pixels */
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  body {
+    /* Set font size to be 80% of the normal size */
+    background-color: yellow;
+  }
+
+}
