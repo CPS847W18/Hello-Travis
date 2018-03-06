@@ -25,5 +25,5 @@ deploy:
   secret_access_key:
     secure: YANoMrvKem1l0fYoNXQG2e1MPD+acJKOnorgiWbS
   bucket: flyehye.com
-  local-dir: HelloWorld/sample_html
+  local-dir: HelloWorld
   
