@@ -12,12 +12,12 @@ install:
 #  - pip install -r ./lecture7/requirements.txt
 
 script: 
-  - python -m unittest discover -v ./ci_play/ # command to run unit test
+  - python -m unittest discover -v ./HelloPython/ # command to run unit test
   - coverage run ./ci_play/test.py # command to run code coverage
 
 #can do additional things, say send out reports, which we will discuss next time
 after_success:
- - codecov --token=9bfd390b-4801-4719-9501-b6750a7f2df1 # upload coverage report to codecov.io
+ - codecov --token=90da6395-a48c-4c10-a1d4-d4e7663d5935 # upload coverage report to codecov.io
 
 deploy:
   provider: s3
