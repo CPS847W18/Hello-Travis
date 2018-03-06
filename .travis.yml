@@ -1,8 +1,8 @@
-language: html
+language: python
 
 #which versions of html to test against
-html:
-  - "5"
+python:
+  - "2.7"
 
 # command to install dependencies
 install:
